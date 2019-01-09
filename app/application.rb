@@ -1,7 +1,7 @@
 require_relative './item'
 
 class Application
-  @@item = []
+  @@items = []
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
