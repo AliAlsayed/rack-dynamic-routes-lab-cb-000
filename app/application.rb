@@ -9,7 +9,7 @@ class Application
       item_name = req.path.split("/items/").last
       item = @@items.find{|item| item.name == item_name}
     else
-      resp.write
+      resp.write "Route not found"
     end
   end
 end
