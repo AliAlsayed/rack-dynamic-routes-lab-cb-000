@@ -1,4 +1,4 @@
-require_relative './item.rb'
+require_relative './item'
 
 class Application
   @@items = []
